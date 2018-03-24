@@ -1,5 +1,3 @@
-# -*-coding: utf-8-*-
-
 #sintaxe do range:
 #range([start], stop[, step])
 
@@ -9,6 +7,9 @@ for x in my_range:
 
 #O range inicia exatamente no START, e vai até o penúltimo valor de STOP
 #Caso seja passado um STEP, a iteração é feita a cada STEP
+
+#Criando um range inverso
+my_range = list(range(10, 0, -1))
 
 #No python 2, a função range retorna uma lista
 #No python 3, a função range retorna um objeto da classe range 

@@ -1,5 +1,3 @@
-# -*-coding: utf-8-*-
-
 x = 10
 string = "sim" if x == 10 else "não"
 

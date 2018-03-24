@@ -1,5 +1,3 @@
-# -*-coding: utf-8-*-
-
 login = input("Login:")
 senha = input("Senha:")
 

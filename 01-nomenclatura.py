@@ -1,5 +1,3 @@
-# -*-coding: utf-8-*-
-
 #Nomes de variáveis
 nome_da_variavel
 

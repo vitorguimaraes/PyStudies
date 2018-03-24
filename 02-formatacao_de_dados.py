@@ -1,4 +1,4 @@
-# -*-coding: utf-8-*-
+#Não é necessário declarar o encoding no python3, as strings já são unicode
 
 num_int = 5
 num_float = 3.123456789
@@ -11,6 +11,9 @@ print("O valor do número int é:", num_int)
 print("O valor do número int é: " + str(num_int))
 print("O valor do número int é: %d" %num_int)
 print("O valor do número int é: {}".format(num_int))
+
+#O Python 3.6 possui f-strings
+# f'O valor do número int é: {num_int}'
 
 #Printar o valor de uma variável float
 print("O valor do número float é:", num_float)
