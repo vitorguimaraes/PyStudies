@@ -8,7 +8,7 @@ for i in range(10):
 #Com a instrução continue, o fluxo de execução é interrompido e volta para o 
 #início do loop. No exemplo abaixo, quando i for par o print não será 
 #executado, e o programa volta para a primeira linha do while
-#Quando i for par, o fluxo de execução passa pelo print
+#Quando i for ímpar, o fluxo de execução passa pelo print
 
 i = 0
 while i<10:

@@ -53,3 +53,12 @@ print(tupla.count("macaco"))
 
 #Retornar o índice de um item da tupla
 print(tupla.index(True))
+
+#Função zip
+# [ 1, 2, 3 ]
+# -zip--------------- ====> [(1, 4), (2, 5), (3, 6)]
+# [ 4, 5, 6 ]
+
+x = [1, 2, 3] #lista ou tupla
+y = [4, 5, 6] #lista ou tupla
+a = tuple(zip(x, y))
