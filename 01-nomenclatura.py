@@ -12,7 +12,7 @@ imprimir_arquivo(nome_do_arquivo)
 NomeDaClasse() #Deve iniciar com letra maiúscula
 
 #Objetos
-obj = MinhaClasse() #Deve iniciar com letra ou underscore
+obj = MinhaClasse() #Deve iniciar com letra ou underscore e ser CamelCase
 
 #Atribuir nomes pequenos aos pacotes e módulos
 import pygame as pg 
