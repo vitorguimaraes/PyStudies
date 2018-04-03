@@ -169,3 +169,5 @@ goo()
 print(num2)
 #A instrução global serve para acessar uma variável global de dentro de um escopo
 #local ou para declarar uma variável global de dentro de um escopo local
+
+#Nunca coloque no escopo global o que pode ser enviado por parâmetro
