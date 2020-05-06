@@ -1,23 +1,23 @@
-#Soma
+# Soma
 print(12+10)
 
-#Subtração
+# Subtração
 print(12-4)
 
-#Multiplicação
+# Multiplicação
 print(3*9)
 
-#Divisão
-#Inteiro dividido por inteiro é inteiro no python 2, mas é ponto flutuante 
-#no python 3
+# Divisão
+# Inteiro dividido por inteiro é inteiro no python 2, mas é 
+# ponto flutuante no python 3
 print(18/3)
-print(3/2)  #1.5 no Python 3, 1 no Python 2 sem o "import division"
+print(3/2)  
 
-#Ignorar casas decimais da divisão (tipo altera para int)
+# Ignorar casas decimais da divisão (tipo altera para int)
 print(10//3)
 
-#Obter resto da divisão
+# Obter resto da divisão
 print(10%3)
 
-#Potenciação 
+# Potenciação 
 print(5**2)
