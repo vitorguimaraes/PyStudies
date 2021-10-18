@@ -53,7 +53,7 @@ class Hero():
 Type hints
 Type annotations
 
-# Herança múltipla
+# Herança múltipla, Mixin
 # Classe abstrata, método abstrato
 # Atributo de classe, Método de classe
 # Property (get e setter)
