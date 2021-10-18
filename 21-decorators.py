@@ -71,6 +71,5 @@ def admin_dashboard():
     return render_template('admin/dashboard.html')
 
 
-
 # https://pythonacademy.com.br/blog/domine-decorators-em-python
 # https://dbader.org/blog/python-decorators
