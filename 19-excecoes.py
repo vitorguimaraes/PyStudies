@@ -3,9 +3,9 @@ def erro(x):
 		eval(x)
 
 	except ValueError as e:
-		print(type(e))	#instância da exceção
-		print(e.args)	#argumentos das mensagens
-		print(e)		#__str__ da mensagem
+		print(type(e))	# instância da exceção
+		print(e.args)	# argumentos das mensagens
+		print(e)		# __str__ da mensagem
 
 	except ZeroDivisionError:
 		print("ZeroDivisionError ocorreu")

@@ -1,44 +1,35 @@
-# Classe é o projeto de um objeto
-# Objeto é a execução do código de uma classe
-# Instância é sinônimo de objeto
-# Propriedades são variáveis que armazenam atributos
-# Métodos são as funções que o objeto pode realizar
-
-def Pessoa():
-    def __init__(self):  # Método construtor
-        pass
+# Falta: Herança, Polimorfismo, Encapsulamento e Abstração
 
 
-p1 = Pessoa()
-print(id(p1))
-p2 = Pessoa()
-print(id(p2))
-
-print("\n")
+# Classe: é o projeto de um objeto
+# Objeto: é a execução do código de uma classe
+# Instância: é sinônimo de objeto
+# Propriedades: são variáveis que armazenam atributos
+# Métodos: são as funções que o objeto pode realizar
 
 class Retangulo():
     def __init__(self):
-        self.altura = 0
+        self.altura = 0 
         self.largura = 0
 
     def area(self):
         return self.altura * self.largura
 
-
+# Instanciando um objeto da classe
 r1 = Retangulo()
 
 # Acessando e modificando atributos:
 r1.altura = 10
 r1.largura = 15 
 
-# Chamando métodos:
-print(r1.area())
+# Invocando métodos:
+r1.area()
 
 ###############################################################################
 # Método Construtor Personalizado
 
 class Circulo():
-    def __init__(self, raio):  # Sempre que um objeto é criado tem que passar r (dunder init dunder)
+    def __init__(self, raio):
         self.r = raio
 
     def area(self):
@@ -50,7 +41,6 @@ print(circulo.area())
 
 ###############################################################################
 # Setters e Getters
-
 
 class Quadrado():
     def __init__(self, lado):
@@ -114,7 +104,6 @@ print("\n")
 ###############################################################################
 # Decorators
 # O decorador de método adiciona funcionalidades ao método sem alterar sua implementação
-
 
 class B():
     def __init__(self):
@@ -208,13 +197,12 @@ print("-------------------------------------------------")
 obj1.func()
 obj2.func()
 
-# Acessando e modificando membro de classe:
+# Acessando e modificando membros de classe:
 MinhaClasse.membro_classe = 1000
 print("\n")
 
 ###############################################################################
 # Métodos de Classe
-
 
 class Bichos():
     qtd_bichos = 0
@@ -293,8 +281,6 @@ class Device:
     def disconnect(self):
         self.disconnect = True 
         print("Disconnected.")
-
-
 class Printer(Device):
     def __init__(self, name, connected_by, capacity):
         super().__init__(name, connected_by) # chama o init da super classe
@@ -311,5 +297,3 @@ class Printer(Device):
         elif self.connected:
             print("Printing {pages} pages.")
             self.remaining_pages -= pages 
-
-

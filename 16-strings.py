@@ -2,12 +2,17 @@
 string1 = 'String com aspas simples'
 string2 = "String com aspas duplas"
 
-#Strings de várias linhas podem ser declaradas com três aspas simples ou duplas
-string1 = '''String com aspas simples
-de várias linhas'''
+# Usa-se aspas simples para: 
+# identificadores, expressões regulares ou SQL 
 
-string2 = """String com aspas duplas
-de várias linhas"""
+# Usa-se aspas duplas para: 
+# Textos 
+
+# Strings de várias linhas podem ser declaradas com três aspas
+string = '''String com 
+			aspas simples
+			de várias linhas'''
+
 
 ###############################################################################
 # Fatiando Strings

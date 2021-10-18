@@ -3,7 +3,7 @@
 
 my_range = range(0, 100, 5)
 for x in my_range:
-	print x
+	print(x)
 
 # O range inicia exatamente no START, e vai até o penúltimo valor de STOP
 # Caso seja passado um STEP, a iteração é feita a cada STEP

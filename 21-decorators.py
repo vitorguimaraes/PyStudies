@@ -1,12 +1,12 @@
 import functools 
 
-# Um decorator é uma forma prática e reusável de adicionarmos funcionalidades às 
-# nossas funções/métodos/classes, sem precisarmos alterar o código delas.
+# Um decorator é uma forma prática e reusável de adicionar funcionalidades à 
+# funções/métodos/classes, sem precisar alterar o código delas.
 
 # Retornar um texto em uppercase:
 
 def uppercase(func):
-    # Esse decorator faz uma cópia os atributos da função 
+    # Esse decorator faz uma cópia dos atributos da função 
     # deixando a função original intacta
     @functools.wraps(func) 
     def wrapper():

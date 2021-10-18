@@ -2,9 +2,8 @@
 # itens que estão lá, você pode adicionar e remover elementos, mas não pode
 # alterar os elementos que estão nele.
 
-# Sets são uma coleção desordenada e não indexadas
-# Não é possível alterar um item, mas é possível adicionar e 
-# remover novos itens
+# Sets são uma coleção desordenada e não indexada
+# Não é possível alterar um item, mas é possível adicionar e remover novos itens
 
 s = {"apple", "banana", "cherry"}
 

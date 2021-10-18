@@ -10,7 +10,6 @@ t = [6, 7, 8, 9]
 lista.extend(t) # ou lista += t
 # agora a lista é [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-
 # Acessando índices da lista:
 print(lista[0])
 print(lista[1])
@@ -116,72 +115,11 @@ print(lista.count("banana"))
 # Retornar o índice de um item da lista
 print(lista.index("maçã"))
 
-#Função zip
+# Função zip
 # [ 1, 2, 3 ]
-# -zip--------------- ====> [(1, 4), (2, 5), (3, 6)]
+# -zip=====> [(1, 4), (2, 5), (3, 6)]
 # [ 4, 5, 6 ]
 
 x = [1, 2, 3] # lista ou tupla
 y = [4, 5, 6] # lista ou tupla
 a = tuple(zip(x, y))
-
-
-
-# *************************************************** #
-# ***** List Comprehension, map, filter, reduce ***** #
-# *************************************************** #
-
-# map(): aplica uma função em cada um dos elementos de uma lista
-# filter(): filtra elementos de uma lista por meio de uma função
-# reduce(): aplica uma função nos elementos da lista, reduzindo a um elemento só
-
-# Problema: Gerar uma nova lista apenas com os números pares:
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-pair_numbers = []
-
-# Solução comum
-for number in numbers:
-	if number%2 == 0:
-		pair_numbers.append(number)
-
-# Solução com List Comprehension:
-pair_numbers = [number for number in numbers if number%2 == 0]
-
-# Solução com ***** MAP *****
-doubled = list(map(lambda x: x*2, numbers))
-
-###############################################################
-###############################################################
-###############################################################
-
-# Problema: Gerar uma nova lista dobrando o valor dos itens
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-doubled = []
-
-# Solução comum
-for number in numbers:
-	doubled.append(number*2)
-
-# Solução com List Comprehension:
-doubled = [number*2 for number in numbers]
-
-# Solução com ***** FILTER *****
-doubled = list(filter(lambda x: x%2 == 0, numbers))
-
-###############################################################
-###############################################################
-###############################################################
-
-# Problema: O maior valor de uma lista
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-maior = 0
-
-# Solução comum
-for number in numbers:
-	if number > maior:
-		maior = number 
-
-
-# Solução com Reduce:
-from functools import reduce 
-maior = reduce((lambda x, y: x if (x > y) else y), numbers)

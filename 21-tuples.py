@@ -1,25 +1,24 @@
 # Tuplas são estruturas imutáveis, portanto não é possível 
-#remover, adicionar ou alterar a tupla de maneira alguma
-# Tuplas geralmente são estruturas heterogêneas, contendo elementos de tipos distintos
+# remover, adicionar ou alterar a tupla de maneira alguma
+# Tuplas podem ter elementos de tipos de dados diferentes 
 tupla = ("amora", 28, True)
 
 # Acessando índices da tupla:
 print(tupla[0])
 print(tupla[1])
 print(tupla[2])
-print("\n")
+
 print(tupla[-1]) # Último elemento da tupla
 print(tupla[-2]) # Penúltimo elemento da tupla
 print(tupla[-3]) # Antipenúltimo elemento da tupla
-print("\n")
+
 
 # Tupla de tuplas
 tupla = ((1, "frutas", False), (True, 2, "casas"), ("python", 7, None))
-print(tupla[0][2]) #Acessando o terceiro elemento da primeira tupla
+print(tupla[0][2]) # Acessando o terceiro elemento da primeira tupla
 
 # Comprimento da tupla
 print(len(tupla))
-print("\n")
 ######################################################################
 
 # Iterando tuplas:

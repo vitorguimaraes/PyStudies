@@ -10,12 +10,17 @@ def soma(x, y): # Aqui definimos os parâmetros
 
 soma(2, 4) # Aqui passamos argumentos para a função
 
+
+# Type hinting
+def soma(x: int, y: int) -> int:
+	return x + y
+
 ###############################################################################
 # Parâmetros Default
 # Deve-se passar primeiro os parâmetros que não são inicializados
-def login(system, user = "admin", password = "123"):
-	print("User: {}".format(user))
-	print("Password: {}".format(password))
+def login(system, user = 'admin', password = '123'):
+	f'User: {user}'
+	f'Password: {password}'
 
 ###############################################################################
 # Argumentos posicionais e nomeados
@@ -23,10 +28,10 @@ def login(system, user = "admin", password = "123"):
 # Argumentos nomeados: associação com o nome do parâmetro e o valor que é enviado
 
 def personal_data(name, age, sex):
-	print("Nome: {}\nIdade: {}\nSexo: {}".format(name, age, sex))
+	print('Nome: {}\nIdade: {}\nSexo: {}'.format(name, age, sex))
 
-personal_data("Vitor", 23, "M")			    #Argumentos posicionais
-personal_data(sex = "M", name = "Vitor", age = 23)  #Argumentos nomeados
+personal_data('Vitor', 23, 'M')			            # Argumentos posicionais
+personal_data(sex = 'M', name = 'Vitor', age = 23)  # Argumentos nomeados
 # Argumentos posicionais são passados como uma tupla
 # Argumentos nomeados são passados como um dicionário
 
@@ -48,28 +53,28 @@ def func(*args, **kwargs):
 	print(args)
 	print(kwargs)
 
-#Ex:
+# Ex:
 def lista_de_argumentos(*args):
 	print(args)
 
 def lista_de_argumentos_nomeados(**kwargs):
 	print(kwargs)
 
-lista_de_argumentos("a", 1, True, 19.6, (1, 3, "a"))
+lista_de_argumentos('a', 1, True, 19.6, (1, 3, 'a'))
 
 lista_de_argumentos_nomeados(Marcelo = 97864537, 
 							 Daniel  = 99673450, 
-							 André   = 88432865, 
-							 Laís    = 99432764,
-							 Márcia  = 88653421,
+							 Andre   = 88432865, 
+							 Lais    = 99432764,
+							 Marcia  = 88653421,
 							 Kelly   = 99563856,
 							 Ana     = 97824423)
 
-func("a", 1, True, 19.6, (1, 3, "a"), Marcelo = 97864537, 
+func('a', 1, True, 19.6, (1, 3, 'a'), Marcelo = 97864537, 
 									  Daniel  = 99673450, 
 									  André   = 88432865, 
 									  Laís    = 99432764,
-									  Márcia  = 88653421,
+									  Marcia  = 88653421,
 									  Kelly   = 99563856,
 									  Ana     = 97824423)
 
@@ -77,7 +82,7 @@ func("a", 1, True, 19.6, (1, 3, "a"), Marcelo = 97864537,
 ###############################################################################
 # Desempacotamento de listas, tuplas e dicionários
 # É possível passar listas, tuplas e dicionários
-#  desempacotados como argumento de uma função
+# desempacotados como argumentos de uma função
 def func(a, b, c):
 	print(a)
 	print(b)
@@ -86,7 +91,7 @@ def func(a, b, c):
 lista = [10, 20, 30]
 func(*lista) # É enviado 10, 20, 30 para a função, e não a lista contendo os valores
 # Exemplo de desempacotamento
-x, y, z = lista  #x = 10, y = 20, z = 30
+x, y, z = lista  # x = 10, y = 20, z = 30
 
 # Exemplo prático:
 def pessoa(nome, sobrenome, idade):
@@ -94,9 +99,9 @@ def pessoa(nome, sobrenome, idade):
 	print(sobrenome)
 	print(idade)
 
-lista = ["Vitor", "Guimarães", 25]
-tupla = "João", "Silva", 35
-dicionario = {"nome": "Vitor", "sobrenome": "Guimarães", "idade": 25}
+lista = ['Vitor', 'Guimarães', 25]
+tupla = 'João', 'Silva', 35
+dicionario = {'nome': 'Vitor', 'sobrenome': 'Guimarães', 'idade': 25}
 
 pessoa(*lista)
 pessoa(*tupla)
@@ -104,24 +109,24 @@ pessoa(**dicionario)
 
 # Função zip (retorna uma lista de tuplas)
 # [ 1, 2, 3 ]
-# -zip--------------- ====> [(1, 4), (2, 5), (3, 6)]
+# zip ======> [(1, 4), (2, 5), (3, 6)]
 # [ 4, 5, 6 ]
 
-x = [1, 2, 3] #lista ou tupla
-y = [4, 5, 6] #lista ou tupla
+x = [1, 2, 3] # lista ou tupla
+y = [4, 5, 6] # lista ou tupla
 a = tuple(zip(x, y))
 
-#Usando zip para passar argumentos para função
+# Usando zip para passar argumentos para função
 def foo(login, password, system):
 	print(login)
 	print(password)
 	print(system)
 
-keys   = "login", "password", "system"
-values = "admin", 123, "MainSystem" 
+keys   = 'login', 'password', 'system'
+values = 'admin', 123, 'MainSystem' 
 
-zipped = zip(keys, values) # [("login", "admin"), ("password", 123), ("system", "MainSystem")]
-named_args = dict(zipped)  # {"login": "admin", "password": 123, "system": "MainSystem"}
+zipped = zip(keys, values) # [('login', 'admin'), ('password', 123), ('system', 'MainSystem')]
+named_args = dict(zipped)  # {'login': 'admin', 'password': 123, 'system': 'MainSystem'}
 foo(**named_args)		   # Desempacota o dicionário 
 
 ###############################################################################
@@ -142,7 +147,7 @@ my_func()
 # escopo global pode ser acessado de outros módulos e por qualquer código 
 # implementado dentro desse módulo
 
-variavel_global = "global" # Essa variável pode ser acessada de qualquer parte do módulo
+variavel_global = 'global' # Essa variável pode ser acessada de qualquer parte do módulo
 
 # A função globals() retorna as variáveis globais do módulo
 # A função locals() retorna as variáveis locais do escopo
@@ -150,17 +155,18 @@ variavel_global = "global" # Essa variável pode ser acessada de qualquer parte 
 # Variáveis globais
 # De dentro das funções nós conseguimos acessar e ler o valor das variáveis
 # globais, mas não conseguimos alterar seus valores
+
 # Ex:
-global1 = "global_variable" # variável global (escopo do módulo)
+global1 = 'global_variable' # variável global (escopo do módulo)
 def goo():
 	global num  #variável, função, classe...
-	num = "access global_variable from local scope" # A variável global num será alterada
+	num = 'access global_variable from local scope' # A variável global 'num' será alterada
 	print(num)
 	global num2
-	num2 = "global_variable declared from local scope"
+	num2 = 'global_variable declared from local scope'
 goo()
 print(num2)
 # A instrução global serve para acessar uma variável global de dentro de um escopo
 # local ou para declarar uma variável global de dentro de um escopo local
 
-# Nunca coloque no escopo global o que pode ser enviado por parâmetro
+# NUNCA coloque no escopo global o que pode ser enviado por parâmetro

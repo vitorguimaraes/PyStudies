@@ -1,23 +1,22 @@
-# Nomes de variáveis
+# Nomes de variáveis: snake_case
 nome_da_variavel
 
-# Nomes de funções e métodos 
+# Nomes de funções e métodos: snake_case() 
 imprimir_arquivo()
 metodo_andar()
 
-# Parâmetros
+# Parâmetros: snake_case
 imprimir_arquivo(nome_do_arquivo)
 
-# Nomes de classes
+# Nomes de classes: PascalCase
 NomeDaClasse() # Deve iniciar com letra maiúscula
 
-# Objetos
+# Objetos: snake_case
 obj = MinhaClasse() # Deve iniciar com letra ou underscore e ser CamelCase
 
-# Atribuir nomes pequenos aos pacotes e módulos
+# É uma boa prática atribuir nomes pequenos aos pacotes e módulos
 import pygame as pg 
 
-# Constantes
-# Letras maiúsculas e palavras unidas por underscore
+# Constantes: UPPER_CASE_SNAKE_CASE
 PI = 3.14
-VALOR_MAXIMO = 50000
+MAX_VALUE = 50000
