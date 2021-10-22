@@ -5,12 +5,12 @@ x = 4
 y = 0
 
 result = 'True' if x in conjunto else 'False'
-f'{result}'
+print(f'{result}')
 
 result = 'True' if y not in conjunto else 'False'
-f'{result}'
+print(f'{result}')
 
 x = 1
 y = 2
 result = 'True' if x and y in conjunto else 'False'
-f'{result}'
+print(f'{result}')

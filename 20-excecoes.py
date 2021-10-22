@@ -13,23 +13,23 @@ def erro(x):
 	except(TypeError, NameError):
 		print("TypeError ou NameError ocorreu")
 
-	else: #Entra aqui quando o try é executado com sucesso
+	else: # Entra aqui quando o try é executado com sucesso
 		print("Nenhuma exceção ocorreu")
 
-	finally: #Essa instrução é executada independente de exceções serem levantadas ou não
-			 #Se ocorrer uma exceção que não foi tratada, o cursor executará o finally também
+	finally: # Essa instrução é executada independente de exceções serem levantadas ou não
+			 # Se ocorrer uma exceção que não foi tratada, o cursor executará o finally também
 		print("Sempre será executado")
 
-#ValueError:
+# ValueError:
 erro("int('a')")
 
-#ZeroDivisionError:
+# ZeroDivisionError:
 erro("10/0")
 
-#TypeError:
+# TypeError:
 erro("int+int")
 
-#NameError:
+# NameError:
 erro("a")
 
 erro("10+10")

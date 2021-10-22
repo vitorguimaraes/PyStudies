@@ -28,7 +28,7 @@ elif a == 10:
 	print("O valor de a é igual a 10\n\n")
 ######################################
 
-# Usar if encadeados faz com que todas as expressões sejam verificadas
+# Usar IFs encadeados faz com que todas as expressões sejam verificadas
 # Se você não precisa que todas as expressões sejam verificadas, use elif, pois
 # o programa irá retornar após encontrar um elif verdadeiro, sem verificar as 
 # demais expressões

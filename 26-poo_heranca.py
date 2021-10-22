@@ -1,12 +1,12 @@
 ################################# Herança #################################
-# Cenário: Uma pessoa possui nome, e cpf 
-# Um funcionário possui tudo que uma pessoa possui, além de: matrícula e cargo
+# Cenário: Uma pessoa possui nome e cpf 
+# Um funcionário possui tudo que uma pessoa possui, além de matrícula e cargo
 
 class Person():
     def __init__(self, name: str, cpf: str) -> None:
         self._name = name 
         self._cpf  = cpf
-
+        
     @property
     def name(self):
         return self._name 
@@ -16,6 +16,7 @@ class Person():
         return self._cpf
 
 
+# A classe filha deve receber os atributos que a classe mãe recebe em seu __init__
 # O método super() chama o inicializador da classe mãe
 # Nele passamos os atributos que a classe mãe recebe
 class Worker(Person):

@@ -13,10 +13,10 @@ from socket import *
 import math
 module = enumerate(dir(math))
 for key, value in module: 
-	f'{key} - {value}'
+	print(f'{key} - {value}')
 
 # No python o módulo principal possui o nome __main__
-f'Name: {__name__}'
+print(f'Name: {__name__}')
 
 # Localização de módulos
 # Todos os paths que o Python verifica estão na variável path do módulo sys
@@ -52,7 +52,7 @@ non_private = _private_variable1 + _private_variable12
 # privadas, apenas à variável non_private. Porém, é possível importar 
 # símbolos privados explicitamente
 # Ex:
-from ferramentas import * #Não tem acesso às variáveis privadas
+from ferramentas import * # Não tem acesso às variáveis privadas
 from ferramentas import _private_variable1 # Dessa forma tem acesso à variável
 
 ###############################################################################
@@ -71,7 +71,7 @@ bb = 3
 from tools import* # Só serão importados os símbolos aa e bb
 
 ###############################################################################
-# Módulo Principal (main)
+# Módulo Principal (__main__)
 # Internamente, o Python nomeia o script que está sendo executado como __main__
 # O bytecode do main é gerado e executado na memória em tempo de execução
 

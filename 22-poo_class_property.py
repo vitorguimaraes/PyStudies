@@ -14,11 +14,10 @@
 # Não é necessário criar setters se você não precisa alterar o atributo
 
 class Hero():
-    def __init__(self, name: str, hp: int, attack: int, defense: int) -> None:
+    def __init__(self, name: str, hp: int, attack: int) -> None:
         self._name    = name
         self._hp      = hp  
         self._attack  = attack 
-        self._defense = defense 
 
     @property 
     def name(self):
@@ -40,31 +39,22 @@ class Hero():
     def attack(self, new_attack: int) -> None:
         self._attack = new_attack
 
-    @property
-    def defense(self):
-        return self._defense
-    
-    @defense.setter 
-    def defense(self, new_defense: int) -> None:
-        self._defense = new_defense
 
 
-
-Type hints
-Type annotations
+# Type hints
+# Type annotations
 
 # Herança múltipla, Mixin
-# Classe abstrata, método abstrato
-# Atributo de classe, Método de classe
-# Property (get e setter)
-# Membros de classe
-# Métodos de classe
-# Métodos estáticos
+# Composição
+# Classe abstrata, método abstrato       
+# Property (get e setter)                OK
+# Atributos de classe                    OK
+# Métodos de classe                      OK
+# Métodos estáticos                      OK
 # Duck typing (__getitem__, __repr__,
  # Python Data Model
 
-Inicialização: __init__
-Representação: __str__, __repr__
-Container, sequencia: __contains__, __iter__, __len__, __getitem__
-Numéricos: __add__, __sub__, __mul__, __mod__
- 
+# Inicialização: __init__
+# Representação: __str__, __repr__
+# Container, sequencia: __contains__, __iter__, __len__, __getitem__
+# Numéricos: __add__, __sub__, __mul__, __mod__

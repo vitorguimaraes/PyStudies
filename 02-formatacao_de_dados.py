@@ -1,5 +1,5 @@
 
-# Não é necessário declarar o encoding no python3, as strings já são unicode
+# Não é necessário declarar o encoding no python3, pois as strings já são unicode
 
 num_float = 3.123456789
 variavel = "olá"
@@ -22,6 +22,5 @@ print("O valor da string é {}".format(variavel))
 # - Aceita expressões 
 # - Aceita chamadas de funções e métodos
 # - É mais rápido que % formatting e str.format()
-# Printar o valor de uma variável float
-print(f'O valor do número float é {num_float:0.3f}')
 print(f'A string é {variavel}')
+print(f'O valor do número float é {num_float:0.3f}')
