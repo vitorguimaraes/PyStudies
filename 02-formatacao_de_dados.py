@@ -24,3 +24,19 @@ print("O valor da string é {}".format(variavel))
 # - É mais rápido que % formatting e str.format()
 print(f'A string é {variavel}')
 print(f'O valor do número float é {num_float:0.3f}')
+
+# formatting
+library = [
+  ('Author', 'Topic', 'Pages'), 
+  ('Twain', 'Rafting', 601), 
+  ('Feyman', 'Physics', 95), 
+  ('Hamilton', 'Mythology', 144)
+]
+
+for author, topic, pages in library: 
+  print(f"{author:10} {topic:10} {pages:>{10}}")
+#Author     Topic           Pages
+#Twain      Rafting           601
+#Feyman     Physics            95
+#Hamilton   Mythology         144
+
